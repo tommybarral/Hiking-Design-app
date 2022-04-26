@@ -20,8 +20,12 @@ class CustomButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(width: 20,),
-          Image.network('https://d29fhpw069ctt2.cloudfront.net/icon/image/39097/preview.png', color: Colors.white,),
+          const SizedBox(width: 50,),
+          Image.network(
+            'https://d29fhpw069ctt2.cloudfront.net/icon/image/39097/preview.png',
+            color: Colors.white,
+            height: 30,
+          ),
         ],
       ),
     );

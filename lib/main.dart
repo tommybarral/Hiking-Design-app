@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hiking_design_app/models/greet_data.dart';
+import 'package:hiking_design_app/screens/home_screen.dart';
 import 'package:hiking_design_app/screens/welcome_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       create: (context) => GreetData(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: WelcomeScreen(),
+        home: HomeScreen(),
       ),
     );
   }
