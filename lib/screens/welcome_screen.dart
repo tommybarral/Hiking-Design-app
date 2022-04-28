@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hiking_design_app/constants.dart';
+import 'package:hiking_design_app/screens/home_screen.dart';
 import 'package:hiking_design_app/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
 import '../models/greet_data.dart';
@@ -42,7 +43,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                           const SizedBox(height: 40,),
-                          CustomButton(isResponsive: false, width: 105),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).pushNamed(HomeScreen.routeName);
+                            },
+                            child: Container(
+                                width: 200,
+                                child: CustomButton(isResponsive: false, width: 105)),
+                          ),
                         ],
                       ),
                       Column(
