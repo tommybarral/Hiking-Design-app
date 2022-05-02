@@ -4,6 +4,9 @@ import 'package:hiking_design_app/models/greet_data.dart';
 import 'package:hiking_design_app/models/hiking_data.dart';
 import 'package:hiking_design_app/screens/hiking_details_screen.dart';
 import 'package:hiking_design_app/screens/home_screen.dart';
+import 'package:hiking_design_app/screens/profile_screen.dart';
+import 'package:hiking_design_app/screens/search_screen.dart';
+import 'package:hiking_design_app/screens/stats_screen.dart';
 import 'package:hiking_design_app/screens/welcome_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
         routes: {
           HomeScreen.routeName: (context) => const HomeScreen(),
           HikingDetailsScreen.routeName: (context) => const HikingDetailsScreen(),
+          ProfileScreen.routeName: (context) => const ProfileScreen(),
+          SearchScreen.routeName: (context) => const SearchScreen(),
+          StatsScreen.routeName: (context) => const StatsScreen(),
         },
       ),
     );
