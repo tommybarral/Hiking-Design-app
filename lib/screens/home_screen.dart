@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hiking_design_app/constants.dart';
-import 'package:hiking_design_app/models/hiking.dart';
-import 'package:hiking_design_app/models/hiking_data.dart';
-import 'package:hiking_design_app/nav_bar.dart';
-import 'package:hiking_design_app/screens/hiking_details_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:hiking_design_app/screens/profile_screen.dart';
-import 'package:hiking_design_app/screens/search_screen.dart';
-import 'package:hiking_design_app/screens/stats_screen.dart';
+import '../constants.dart';
+import '../models/hiking_data.dart';
+//import 'package:hiking_design_app/nav_bar.dart';
+import '../screens/hiking_details_screen.dart';
+import '../screens/profile_screen.dart';
+import '../screens/search_screen.dart';
+import '../screens/stats_screen.dart';
 
 class HomeScreen extends StatefulWidget {
 
@@ -129,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              height: 290,
+              height: MediaQuery.of(context).size.height < 600 ? 266 : 340,
               width: double.infinity,
               padding: const EdgeInsets.only(left: 20),
               child: TabBarView(
@@ -148,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           children: [
                             Container(
                               height: 300,
-                              width: 200,
+                              width: MediaQuery.of(context).size.width < 350 ? 200 : 250,
                               margin: const EdgeInsets.only(top: 10, right: 15),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
@@ -163,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               bottom: 0,
                               child: Container(
                                 height: 75,
-                                width: 200,
+                                width: MediaQuery.of(context).size.width < 350 ? 200 : 250,
                                 decoration: const BoxDecoration(
                                   color: Colors.black45,
                                   borderRadius: BorderRadius.only(topLeft: Radius.circular(5), topRight: Radius.circular(5), bottomLeft: Radius.circular(25), bottomRight: Radius.circular(25)),

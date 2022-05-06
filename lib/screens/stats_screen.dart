@@ -8,7 +8,7 @@ class StatsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Center(
+        child: const Center(
           child: Text('Stats page'),
         ),
       ),

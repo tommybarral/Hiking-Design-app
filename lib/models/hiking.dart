@@ -1,6 +1,3 @@
-
-import 'package:flutter/foundation.dart';
-
 class Hiking {
   final String id;
   final String title;
